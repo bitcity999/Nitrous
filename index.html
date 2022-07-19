@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+
+    <!-- Style Sheets -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+
+    <!-- Main -->
+    <main class="col-12">
+
+        <div class="container">
+            <div class="joke">
+                You have to laugh its a joke.
+            </div>
+            <div class="btns">
+                <button type="button" id="saveBtn" title="save joke"><i class="fas fa-heart"></i></button>
+                <button type="button" id="jokeBtn">Get a Joke</button>
+            </div>
+            <h3>Saved Jokes</h3>
+            <div class="saved-jokes">
+                <ul id="ul-el">
+                </ul>
+            </div>
+            <div class="delbtn">
+                <button id="delBtn" type="button" title="clear-all">
+                    <i class="fas fa-trash-can"></i>
+                </button>
+            </div>
+            <p><i>Made by -</i> Prakhar Vohra, Bitcity999</p>
+        </div>
+
+    </main>
+    <!-- Main End -->
+    
+    <!-- Scripts -->
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sv443-joke-api@0.0.8/web/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c758c8bec9.js" crossorigin="anonymous"></script>
+    <script>
+      AOS.init({
+        offset : 200,
+        duration : 1000
+      });
+    </script>
+
+</body>
+</html>

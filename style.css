@@ -1,0 +1,197 @@
+/* Imports - Fonts .......................... */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #1d1d1d;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+    width: 0%;
+}
+
+/* ::::::::::::::: General Styling ::::::::::::::: */
+
+a { 
+    text-decoration: none;
+    color: #000000;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.txt-al-cent {
+    text-align: center;
+}
+.med-trans {
+    transition: all 1.00s ease;
+}
+.displ-flx {
+    display: flex;
+}
+.flx-d-col {
+    flex-direction: column;
+}
+.flx-wrp {
+    flex-wrap: wrap;
+}
+.align-itm-cent {
+    display: flex;
+    align-items: center;
+}
+.just-cnt-spev {
+    display: flex;
+    justify-content: space-evenly;
+}
+.just-cnt-spbw {
+    display: flex;
+    justify-content: space-between;
+}
+.just-cnt-cent {
+    display: flex;
+    justify-content: center;
+}
+
+/* ::::: Header ::::: */
+header {
+    height: 5vh;
+    background-color: #131313;
+}
+/* ::::: Header End ::::: */
+
+/* ::::: Main ::::: */
+main {
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 80%;
+    max-width: 400px;
+    background-color: #1313139c;
+    display: flex;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    align-items: center;
+    border-radius: 15px;
+    color: #ffffff;
+    flex-direction: column;
+    padding: 20px;
+}
+.joke {
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+.container button {
+    transition: all 0.3s ease;
+}
+.container .btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+}
+.container .btns button {
+    margin: 0 10px;
+    font-size: 1.2em;
+    background-color: #585858;
+    padding: 10px;
+}
+.container #jokeBtn {
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: #e0d999;
+}
+.container #saveBtn {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff4444;
+}
+.container button:hover {
+    background-color: #e0d999 !important;
+}
+.container h3 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding-top: 10px;
+    background-color: #2c2c2c;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.container .saved-jokes {
+    width: 100%;
+    max-height: 250px;
+    padding: 0 15px 10px 15px;
+    background-color: #2c2c2c;
+    overflow: scroll;
+}
+.saved-jokes ul {
+    margin-top: 10px;
+    list-style-type: none
+}
+.saved-jokes ul li {
+    margin: 10px 0;
+    color: #838383;
+}
+.container .delbtn {
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+.container .delbtn button {
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 0 5px 0;
+    background-color: #585858;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0d999;
+}
+.delbtn button:hover, #jokeBtn:hover {
+    color: #000000;
+}
+/* ::::: Main End ::::: */
+
+/* ::::: Footer ::::: */
+footer {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ::::: Footer End ::::: */
